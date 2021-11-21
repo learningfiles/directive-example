@@ -16,15 +16,18 @@
       </div>
 
       <div class="mt-3">
-        <h4 *ngIf="canShow">This is ngIf structural directive</h4>
+        <p *ngIf="canShow">This is ngIf structural directive</p>
 
-      <ng-template [ngIf]="canShow">
-        <h4>This is ngIf structural directive in expanded format</h4>
-      </ng-template>
+        <ng-template [ngIf]="canShow">
+          <p>This is ngIf structural directive in expanded format</p>
+        </ng-template>
 
-      <h4 *ngIf2="canShow">This is ngIf2 custom structural directive</h4>
+        <p *ngIf2="canShow">This is ngIf2 custom structural directive</p>
+
+        <h4>Template</h4>
+
+        <app-template></app-template>
       </div>
     </div>
   </div>
 </div>
-

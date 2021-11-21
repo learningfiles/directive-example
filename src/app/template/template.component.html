@@ -1,0 +1,14 @@
+<button class="btn btn-outline-secondary" (click)="onAdd()">add Teamplate</button>
+<button class="btn btn-outline-danger" style="margin-left: 10px;" (click)="onRemove()">Remove Teamplate</button>
+
+<ng-template #templateContent>
+  <p class="mt-3">This is inside template</p>
+</ng-template>
+
+<div #target></div>
+
+<!-- <ng-container *ngTemplateOutlet="templateContent">
+  <p>This is inside container</p>
+</ng-container> -->
+
+<!-- <p *ngTemplateOutlet="templateContent">This is a paragraph</p> -->
